@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スタンプラリー | 金沢水めぐり</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stamp.css">
+</head>
+<body>
+<div class="site">
+
+    <header class="header">
+        <a href="index.html" class="brand">金沢水めぐり</a>
+        <a href="index.html" class="back-link">← ホーム</a>
+    </header>
+
+    <section class="history-hero">
+        <p class="section-label">STAMP RALLY</p>
+        <h1>スタンプラリー</h1>
+        <p>水の流れをたどって金沢を巡ろう</p>
+    </section>
+
+    <main class="stamp-main">
+        <section class="stamp-progress">
+            <h2>スタンプ獲得状況</h2>
+            <p class="stamp-count">
+                <span id="count">0</span> / 3
+            </p>
+            <div class="progress-track">
+                <div id="progressBar" class="progress-fill"></div>
+            </div>
+            <p id="progressMessage">3か所を巡ってみよう！</p>
+        </section>
+
+        <p class="demo-note">
+            ※ 現在は体験版です。ボタンでスタンプを記録できます。
+            現地訪問の確認は行っていません。
+        </p>
+
+        <section class="stamp-list">
+            <article class="stamp-card" data-spot="tatsumi">
+                <div class="stamp-symbol">水</div>
+                <div class="stamp-info">
+                    <small>SPOT 01</small>
+                    <h2>辰巳用水</h2>
+                    <p class="stamp-status">未獲得</p>
+                </div>
+                <button class="get-stamp" type="button">
+                    スタンプを獲得
+                </button>
+            </article>
+
+            <article class="stamp-card" data-spot="kuratsuki">
+                <div class="stamp-symbol">流</div>
+                <div class="stamp-info">
+                    <small>SPOT 02</small>
+                    <h2>鞍月用水</h2>
+                    <p class="stamp-status">未獲得</p>
+                </div>
+                <button class="get-stamp" type="button">
+                    スタンプを獲得
+                </button>
+            </article>
+
+            <article class="stamp-card" data-spot="onosho">
+                <div class="stamp-symbol">巡</div>
+                <div class="stamp-info">
+                    <small>SPOT 03</small>
+                    <h2>大野庄用水</h2>
+                    <p class="stamp-status">未獲得</p>
+                </div>
+                <button class="get-stamp" type="button">
+                    スタンプを獲得
+                </button>
+            </article>
+        </section>
+
+        <div id="completeMessage" class="complete-message" hidden>
+            <h2>全スタンプ獲得！</h2>
+            <p>金沢の用水路めぐり達成！</p>
+        </div>
+
+        <button id="resetButton" class="reset-button" type="button">
+            スタンプをリセット
+        </button>
+
+        <a href="index.html" class="return-button">
+            トップページへ戻る
+        </a>
+    </main>
+
+    <footer>
+        <p>© 2026 金沢水めぐり</p>
+    </footer>
+</div>
+<script src="stamp.js"></script>
+</body>
+</html>

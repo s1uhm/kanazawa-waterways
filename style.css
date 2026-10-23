@@ -1,0 +1,279 @@
+
+:root {
+    --navy: #183b43;
+    --gold: #b69b64;
+    --cream: #f6f2e9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--navy);
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+.site {
+    max-width: 520px;
+    min-height: 100vh;
+    margin: auto;
+    background: #fffdf9;
+    box-shadow: 0 0 30px rgba(0,0,0,0.08);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--navy);
+}
+
+.brand {
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--navy);
+    text-decoration: none;
+}
+
+.language {
+    border: 1px solid var(--navy);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--navy);
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(10,35,42,.45), rgba(10,35,42,.6)),
+        url("kanazawa-water.jpg") center/cover;
+    color: white;
+}
+
+.hero-content {
+    padding: 30px 20px;
+}
+
+.hero-subtitle {
+    font-family: sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #e8d7ad;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 9vw, 46px);
+    line-height: 1.5;
+    letter-spacing: 5px;
+    margin: 15px 0;
+}
+
+.hero-description {
+    line-height: 2;
+    font-size: 14px;
+}
+
+main {
+    padding: 35px 25px 50px;
+    text-align: center;
+}
+
+.section-label {
+    color: var(--gold);
+    font-family: sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+main > h2 {
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-card {
+    min-height: 90px;
+    border: 1.5px solid var(--navy);
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--navy);
+    text-decoration: none;
+    background: white;
+    transition: 0.2s;
+}
+
+.menu-card:hover {
+    background: var(--navy);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.menu-number {
+    color: var(--gold);
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.menu-title {
+    flex: 1;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu-arrow {
+    font-size: 22px;
+}
+
+.introduction {
+    margin-top: 60px;
+    padding: 30px 15px;
+    border-top: 1px solid var(--gold);
+}
+
+.introduction h2 {
+    font-size: 24px;
+}
+
+.introduction p {
+    line-height: 2.2;
+    font-size: 14px;
+}
+
+footer {
+    padding: 20px;
+    background: var(--navy);
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+@media (min-width: 700px) {
+    .site {
+        margin: 30px auto;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+}
+
+
+/* 歴史ページ */
+
+.back-link {
+    color: var(--navy);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.history-hero {
+    background-color: var(--navy);
+    color: white;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.history-hero .section-label {
+    color: #dfc796;
+}
+
+.history-hero h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin: 15px 0;
+}
+
+.history-hero > p:last-child {
+    font-size: 14px;
+}
+
+.history-main {
+    padding: 30px 25px 60px;
+    text-align: left;
+}
+
+.history-intro {
+    margin-bottom: 50px;
+}
+
+.history-intro h2 {
+    font-size: 22px;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 15px;
+}
+
+.history-intro p,
+.waterway p {
+    line-height: 2;
+    font-size: 15px;
+}
+
+.waterway {
+    margin-bottom: 55px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ddd;
+}
+
+.waterway img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #e8e8e8;
+}
+
+.waterway-number {
+    color: #a68a55;
+    font-family: sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.waterway h2 {
+    font-size: 27px;
+    margin: 10px 0 20px;
+}
+
+.waterway h3 {
+    color: var(--navy);
+    border-left: 4px solid var(--gold);
+    padding-left: 12px;
+    margin-top: 25px;
+}
+
+.return-button {
+    display: block;
+    text-align: center;
+    padding: 18px;
+    border: 1px solid var(--navy);
+    border-radius: 12px;
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.return-button:hover {
+    background: var(--navy);
+    color: white;
+}
+
