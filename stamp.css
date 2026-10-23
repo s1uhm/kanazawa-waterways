@@ -1,137 +1,21 @@
 
-.stamp-main {
-    padding: 30px 22px 50px;
-}
-
-.stamp-progress {
-    text-align: center;
-    padding: 25px 15px;
-    background: #f6f2e9;
-    border-radius: 15px;
-}
-
-.stamp-progress h2 {
-    font-size: 20px;
-}
-
-.stamp-count {
-    font-size: 38px;
-    font-weight: bold;
-    color: #183b43;
-    margin: 12px 0;
-}
-
-.progress-track {
-    height: 12px;
-    background: #ddd;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.progress-fill {
-    width: 0%;
-    height: 100%;
-    background: #b69b64;
-    transition: width 0.3s;
-}
-
-.demo-note {
-    font-size: 12px;
-    line-height: 1.8;
-    margin: 25px 0;
-    color: #666;
-}
-
-.stamp-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.stamp-card {
-    display: grid;
-    grid-template-columns: 75px 1fr;
-    gap: 12px;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #b69b64;
-    border-radius: 15px;
-    background: white;
-}
-
-.stamp-symbol {
-    width: 70px;
-    height: 70px;
-    border: 2px dashed #b69b64;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color: #b69b64;
-    opacity: 0.35;
-}
-
-.stamp-card.acquired .stamp-symbol {
-    opacity: 1;
-    background: #183b43;
-    color: white;
-    border: 3px solid #b69b64;
-}
-
-.stamp-info {
-    text-align: left;
-}
-
-.stamp-info small {
-    color: #b69b64;
-}
-
-.stamp-info h2 {
-    margin: 5px 0;
-    font-size: 20px;
-}
-
-.stamp-status {
-    margin: 0;
-    font-size: 13px;
-}
-
+/* QRコード方式では手動獲得ボタンを隠す */
 .get-stamp {
-    grid-column: 1 / -1;
-    width: 100%;
-    padding: 14px;
-    border: none;
-    border-radius: 9px;
-    background: #183b43;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.get-stamp:disabled {
-    background: #78958c;
-    cursor: default;
-}
-
-.complete-message {
-    margin: 30px 0;
-    padding: 20px;
-    border: 2px solid #b69b64;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.complete-message[hidden] {
     display: none;
 }
 
-.reset-button {
-    margin: 30px 0;
-    padding: 12px;
-    border: 1px solid #999;
-    border-radius: 8px;
-    background: transparent;
-    color: #555;
-    cursor: pointer;
+/* QRコード読み取り結果 */
+.scan-notice {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 12px;
+    background: #f6f2e9;
+    color: #183b43;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.scan-notice:empty {
+    display: none;
 }
