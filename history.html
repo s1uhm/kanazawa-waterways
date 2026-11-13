@@ -1,131 +1,174 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用水路の歴史 | 金沢水めぐり</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用水路の歴史 | 金沢水めぐり</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="history.css">
+  <link rel="stylesheet" href="language.css">
 </head>
 <body>
-
 <div class="site">
-
-    <header class="header">
-        <a href="index.html" class="brand">
-            金沢水めぐり
-        </a>
-        <a href="index.html" class="back-link">
-            ← ホーム
-        </a>
-    </header>
-
-    <section class="history-hero">
-        <p class="section-label">HISTORY OF WATERWAYS</p>
-        <h1>用水路の歴史</h1>
-        <p>金沢の街を流れる水の物語</p>
+  <header class="header">
+    <a href="index.html" class="brand">金沢用水めぐり</a>
+    <div class="header-actions"><div class="language-picker" id="languagePicker">
+      <button class="language-toggle" id="languageToggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="languageOptions"><span aria-hidden="true">🌐</span> <span id="currentLanguage">日本語</span> <span aria-hidden="true">⌄</span></button>
+      <div class="language-options" id="languageOptions" role="menu" hidden></div>
+    </div><a href="index.html" class="back-link">← ホーム</a></div>
+  </header>
+  <section class="history-hero">
+    <p class="section-label">HISTORY OF WATERWAYS</p>
+    <h1>用水路の歴史</h1>
+    <p>金沢の街を流れる水の物語</p>
+  </section>
+  <main class="history-main">
+    <section class="history-intro">
+      <h2>水の流れが育てた城下町</h2>
+      <p>金沢の用水は、農業だけでなく、防火や物資の運搬、水車を使った産業など、人々の暮らしを支えてきました。ここでは、金沢の12か所の用水について、歴史と今に残る見どころを紹介します。</p>
     </section>
-
-    <main class="history-main">
-
-        <section class="history-intro">
-            <h2>金沢と用水路の関係</h2>
-            <p>
-                金沢には、古くから多くの用水路が
-                張り巡らされています。
-                用水路は農業だけでなく、
-                人々の生活や城下町の発展を
-                支える役割も果たしてきました。
-            </p>
-            <p>
-                今も街の中を流れる用水路には、
-                金沢の歴史や文化が残されています。
-            </p>
-        </section>
-
-        <section class="waterway">
-
-            <img src="tatsumi.jpg"
-                 alt="辰巳用水の風景">
-
-            <p class="waterway-number">01 / TATSUMI</p>
-            <h2>辰巳用水</h2>
-
-            <p>
-                辰巳用水は、江戸時代の1632年に
-                造られた用水路です。
-                金沢城への水の供給や、
-                城下町を火災から守ることなどを
-                目的として整備されました。
-            </p>
-
-            <h3>見どころ</h3>
-            <p>
-                当時の優れた土木技術を知ることができ、
-                金沢の歴史を感じられる場所です。
-            </p>
-
-        </section>
-
-        <section class="waterway">
-
-            <img src="kuratsuki.jpg"
-                 alt="鞍月用水の風景">
-
-            <p class="waterway-number">02 / KURATSUKI</p>
-            <h2>鞍月用水</h2>
-
-            <p>
-                鞍月用水は、金沢の城下町の暮らしを
-                支えてきた用水路の一つです。
-                水車の動力や生活用水など、
-                さまざまな用途で利用されてきました。
-            </p>
-
-            <h3>見どころ</h3>
-            <p>
-                街の中を流れる水路と周辺の建物が
-                調和した風景を楽しめます。
-                水の音を聞きながら歩くのもおすすめです。
-            </p>
-
-        </section>
-
-        <section class="waterway">
-
-            <img src="onosho.jpg"
-                 alt="大野庄用水の風景">
-
-            <p class="waterway-number">03 / ONOSHO</p>
-            <h2>大野庄用水</h2>
-
-            <p>
-                大野庄用水は、金沢の城下町の発展を
-                支えてきた歴史ある用水路です。
-                かつては物資の運搬などにも
-                利用されていました。
-            </p>
-
-            <h3>見どころ</h3>
-            <p>
-                長町武家屋敷跡周辺では、
-                土塀と用水路が並ぶ、
-                金沢らしい景色を楽しめます。
-            </p>
-
-        </section>
-
-        <a href="index.html" class="return-button">
-            トップページへ戻る
-        </a>
-
-    </main>
-
-    <footer>
-        <p>© 2026 金沢水めぐり</p>
-    </footer>
-
+    <section class="waterway" id="tatsumi">
+      <p class="waterway-number">01 / TATSUMI</p>
+      <h2>辰巳用水</h2>
+      <p class="waterway-tagline">金沢城の水を支えた用水</p>
+      <img src="tatsumi.jpg" alt="辰巳用水の風景" loading="lazy">
+      <p class="waterway-lead">大火をきっかけに金沢城の水利改善を目指して造られた用水。地形を生かした当時の土木技術と、現在も残る水の景観が特徴です。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>寛永8年（1631年）の法船寺大火をきっかけに、金沢城の水利を改善するために造られました。小立野台地の地形を利用し、当時の先端的な技術によって1年足らずで完成したとされています。</p>
+      <p>明治時代以降は、農業用水や生活用水として使われたほか、水車を動かして精米や製粉を行うためにも利用されました。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>取水口から兼六園までの水路の長さは約11km。上流部には岩盤を掘った隧道（トンネル状の水路）があり、江戸時代の姿が良好に残されています。</p>
+      <p>中村記念美術館と石川県立美術館をつなぐ「美術の小径」では、滝のように流れる水を眺めることができ、夏には涼しさも感じられます。</p>
+    </section>
+    <section class="waterway" id="onosho">
+      <p class="waterway-number">02 / ONOSHO</p>
+      <h2>大野庄用水</h2>
+      <p class="waterway-tagline">城下町の発展と物資運搬</p>
+      <img src="onosho.jpg" alt="大野庄用水の風景" loading="lazy">
+      <p class="waterway-lead">金沢でも古い歴史を持つとされる用水。木材などの物資を運び、農業や暮らしを支えてきました。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>金沢でも最も古い用水とされ、尾山御坊の時代から存在した可能性が伝承されています。灌漑（農地に水を送ること）に加え、物資運搬、防火、防御、融雪など幅広い用途で使われてきました。</p>
+      <p>金沢城の築城にも大きな役割を果たしたと伝えられています。かつて旧宮腰（金石港）から大量の木材を運んだことから、「御荷川（おにがわ）」または「鬼川」とも呼ばれました。</p>
+      <p>古道木揚場（中橋町）より下流は「木曳川」と呼ばれ、旧戸板村・旧鞍月村・旧大野村・旧金石町の農地も潤してきました。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>開渠（地表を流れる水路）の始まりでは、大正4年（1915年）の銘板を見ることができます。</p>
+      <p>片町2丁目の染物店では、今も用水を使った糊落としが行われていると資料に記されています。</p>
+      <p>長町武家屋敷跡周辺では、用水の流れと町並みを一緒に楽しめ、小魚が見られることもあります。</p>
+    </section>
+    <section class="waterway" id="kuratsuki">
+      <p class="waterway-number">03 / KURATSUKI</p>
+      <h2>鞍月用水</h2>
+      <p class="waterway-tagline">水車と近代産業を動かした水</p>
+      <img src="kuratsuki.jpg" alt="鞍月用水の風景" loading="lazy">
+      <p class="waterway-lead">農業や城下町の防御だけでなく、水車を通じてものづくりを支えた用水です。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>鞍月方面の田畑を潤すために利用され、柿木畠から長町までの区間では金沢城の外堀（惣構）の役割も果たしました。築造時期ははっきり分かっていません。</p>
+      <p>正保年間（1644〜1648年）、菜種油を製造する水車を安定して動かすために水路が改修されたと伝えられています。取水堰には「油瀬木」という名が残っています。</p>
+      <p>明治以降は精米・製粉用の水車が増え、明治初期には金沢製糸場の動力にも利用されました。撚糸・機業・精錬業など、近代の産業を支える水でもありました。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>開渠化やポケットパークの整備が進み、街の中で水に親しめる空間が生まれています。</p>
+    </section>
+    <section class="waterway" id="izumi">
+      <p class="waterway-number">04 / IZUMI</p>
+      <h2>泉用水</h2>
+      <p class="waterway-tagline">寺町台地を巡る農業用水</p>
+      <p class="waterway-lead">城下町の古い地図にも登場し、寺町台地の裾を流れる農業用水です。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>藩政初期から存在する農業用水で、17世紀後半の城下図にも描かれています。犀川大橋の直下に旧取水口があり、寺町台地の裾を巡るように流れ、旧米丸村や旧三馬村の農地を潤してきました。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>アーチ状の水路や石積みの護岸が見られます。にし茶屋街の近くには、一橋ごとにデザインの異なる市道橋が架かっています。</p>
+    </section>
+    <section class="waterway" id="nakamura">
+      <p class="waterway-number">05 / NAKAMURA TAKABATAKE</p>
+      <h2>中村高畠用水</h2>
+      <p class="waterway-tagline">二つの流れが結びついた用水</p>
+      <p class="waterway-lead">もとは別々だった中村用水と高畠用水。大正時代に取入口が共通になりました。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>中村用水は藩政初期からある農業用水で、17世紀後半の城下図にも存在が確認されています。高畠用水はもともと別の流れでしたが、大正7年（1918年）に取入口を同じくし、現在の名称となりました。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>神田町児童公園には、用水の水を引き入れた親水空間が整備されています。</p>
+    </section>
+    <section class="waterway" id="asahi">
+      <p class="waterway-number">06 / ASAHI</p>
+      <h2>旭用水</h2>
+      <p class="waterway-tagline">清水と緑の景観</p>
+      <p class="waterway-lead">小立野台地沿いを流れ、かつて人々の暮らしに清らかな水を届けた用水です。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>小立野台地沿いで、浅野川左岸から取水している唯一の用水です。旭町に通じていることから「旭用水」と呼ばれるようになりました。</p>
+      <p>鶴間坂周辺はかつて竹藪や林が広がり、藩政期には風雅を好む人々が集まったといわれています。坂の中腹にあった「旭清水」は周辺の住民の飲料水として重宝されましたが、昭和30年頃に枯れ、現在は湧き口の跡が残ります。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>石積みの護岸や洗い場、水面にかかる花や緑など、周囲の段丘の緑と調和した景観が魅力です。</p>
+    </section>
+    <section class="waterway" id="kanaura">
+      <p class="waterway-number">07 / KANAURA</p>
+      <h2>金浦用水</h2>
+      <p class="waterway-tagline">旧金浦郷を潤した水路</p>
+      <p class="waterway-lead">かつての地域名に由来する、地域の農地を支えた用水です。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>藩政期から明治中期にかけて「旧金浦郷」と呼ばれていた地域一帯を潤していたことから、その名が付いたとされています。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>銚子町では、民家の庭先に鑑賞用の水車が見られると資料に記されています。</p>
+    </section>
+    <section class="waterway" id="kobashi">
+      <p class="waterway-number">08 / KOBASHI</p>
+      <h2>小橋用水</h2>
+      <p class="waterway-tagline">水車と菜種油づくり</p>
+      <p class="waterway-lead">浅野川から取水し、水車を使ったものづくりにも関わった歴史を持ちます。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>正確な築造年代は分かっていませんが、17世紀後半の城下図には浅野川の小橋上流から取水する水路が描かれています。</p>
+      <p>三代藩主前田利常の時代、旧水車町に菜種油を製造する水車が設置されたとされ、17世紀前半には水路が存在していたと考えられています。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>元町第三児童公園には、かつての水車の姿をしのばせる木製水車が設けられています。</p>
+    </section>
+    <section class="waterway" id="nakajima">
+      <p class="waterway-number">09 / NAKAJIMA</p>
+      <h2>中島用水</h2>
+      <p class="waterway-tagline">自然の流れから農業用水へ</p>
+      <p class="waterway-lead">浅野川から派生した自然水路を起源とする可能性がある用水です。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>元禄11年（1698年）に、小橋用水とあわせて狭くなった水路を改修したという記録があります。もとは浅野川から分かれた自然水路だったと考えられています。</p>
+      <p>小橋用水と共通の可動堰が造られる以前は、旧中島町に瀬木を設けて水を取り入れていました。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>市街地では多くが暗渠（地中に覆われた水路）となっていますが、沖町・磯部町などでは農業用水として地域を潤しています。</p>
+    </section>
+    <section class="waterway" id="kantarogawa">
+      <p class="waterway-number">10 / KANTARO RIVER</p>
+      <h2>勘太郎川</h2>
+      <p class="waterway-tagline">水車産業を支えた辰巳用水の分流</p>
+      <p class="waterway-lead">辰巳用水から分かれ、かつて周辺の産業にも使われた流れです。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>辰巳用水の分流で、石引町に住んでいた「勘太郎」という人物に由来する名だといわれていますが、由来は定かではありません。</p>
+      <p>戦後まで、旧百姓町（幸町）・鱗町・本多町には、水車を使って製糸、精錬、精米、製粉などを行う家が多くありました。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>白山坂から二十人坂付近には、市街地とは思えないようなのどかな風景が広がっています。</p>
+    </section>
+    <section class="waterway" id="teratsu">
+      <p class="waterway-number">11 / TERATSU</p>
+      <h2>寺津用水</h2>
+      <p class="waterway-tagline">農業・発電・上水道を支える</p>
+      <p class="waterway-lead">山あいの水を農業に届け、その後は発電や上水道にも使われた用水です。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>正保3年（1646年）、浪人の田中覚兵衛が藩に提案し、寛文4年（1664年）に工事が始まり、翌年完成しました。</p>
+      <p>辰巳用水より上流の土清水町・末町・辰巳町・上辰巳町を潤すために造られ、犀川の最上流から取水しています。上流には隧道（トンネル状の水路）が掘られました。</p>
+      <p>明治33年（1900年）には、この水を利用した金沢市最初の発電所「辰巳発電所」が完成。昭和5年（1930年）の末浄水場完成後は、市内の上水道にも利用されています。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>用水沿いには、自然豊かな遊歩道が整備されています。</p>
+    </section>
+    <section class="waterway" id="nagasaka">
+      <p class="waterway-number">12 / NAGASAKA</p>
+      <h2>長坂用水</h2>
+      <p class="waterway-tagline">新しい農地を開くための水</p>
+      <p class="waterway-lead">寺町台地の農地を潤し、地域の開墾と発展に関わってきました。</p>
+      <h3>歴史と成り立ち</h3>
+      <p>押野村の十村太兵衛らが、寺町台地を灌漑する目的で藩命のもと工事を始めました。犀川の支流・内川から水を取り入れる長坂用水を開削し、長坂新村（長坂・長坂台）の開村や泉野方面の生産力向上につながりました。</p>
+      <p>昭和48年（1973年）には上流部が犀川浄水場の導水路と共用になり、水路が4km近く短くなりました。</p>
+      <h3>今に残る景観・見どころ</h3>
+      <p>内川地区では竹林の間を縫うように流れ、自然に近い姿を残しています。</p>
+    </section>
+    <a href="index.html" class="return-button">トップページへ戻る</a>
+  </main>
+  <footer><p>© 2026 金沢水めぐり</p></footer>
 </div>
-
+<script src="language.js"></script>
 </body>
 </html>

@@ -1,0 +1,10 @@
+/* 全ページ共通・言語選択 */
+.header-actions { display:flex; align-items:center; gap:10px; }
+.language-picker { position:relative; flex-shrink:0; font-family:system-ui,-apple-system,sans-serif; }
+.language-toggle { display:flex; align-items:center; gap:5px; padding:9px 11px; min-height:40px; border:1px solid #183b43; border-radius:22px; background:#fffdf9; color:#183b43; font-size:13px; cursor:pointer; white-space:nowrap; }
+.language-toggle:hover,.language-toggle:focus-visible { background:#f6f2e9; outline-offset:2px; }
+.language-options { position:absolute; z-index:100; right:0; top:calc(100% + 7px); min-width:138px; padding:5px; background:#fffdf9; border:1px solid #b69b64; border-radius:12px; box-shadow:0 6px 22px #0002; }
+.language-options[hidden] { display:none; }
+.language-option { display:block; width:100%; padding:10px 12px; background:transparent; border:0; border-radius:8px; text-align:left; font-size:14px; color:#183b43; cursor:pointer; }
+.language-option:hover,.language-option:focus-visible { background:#f6f2e9; }
+@media(max-width:380px) { .header {padding:14px 10px;} .header-actions {gap:6px;} .brand {font-size:13px;letter-spacing:1px;} .back-link {font-size:11px;} .language-toggle {padding:8px;font-size:12px;} }

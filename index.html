@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用水路をめぐろう!! | 金沢</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="language.css">
 </head>
 <body>
     <div class="site">
 
         <header class="header">
-            <div class="brand">金沢水めぐり</div>
-            <button class="language" id="langButton" type="button">
-                ◎ Language
-            </button>
+            <div class="brand">金沢用水めぐり</div>
+            <div class="language-picker" id="languagePicker">
+      <button class="language-toggle" id="languageToggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="languageOptions"><span aria-hidden="true">🌐</span> <span id="currentLanguage">日本語</span> <span aria-hidden="true">⌄</span></button>
+      <div class="language-options" id="languageOptions" role="menu" hidden></div>
+    </div>
         </header>
 
         <section class="hero">
@@ -71,6 +73,6 @@
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="language.js"></script>
 </body>
 </html>
